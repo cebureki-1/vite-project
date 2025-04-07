@@ -1,11 +1,10 @@
-import { useState, useEffect } from "react"
+import { useState} from "react"
 export default function App(){
-    const [name, Setname] = useState(null)
-    const [email, Setemail] = useState("")
-    const [passworld, Setpassworld] = useState("")
-
-    const [lgname, Setlgname] =  useState("")
-    const [lgpassworld, Setpw] =  useEffect("")
+    const [user, setUser] = useState(null);
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
 
     const handleRegister = () => {
         if (!name || !email || !password) {
