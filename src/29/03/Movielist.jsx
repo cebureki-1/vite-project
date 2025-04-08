@@ -1,6 +1,8 @@
 import { Link } from "react-router-dom";
-
+import Search from "./Search";
 const MovieList = ({ movies }) => {
+  console.log(movies);
+  
   return (
     <div className="movie-list">
       {movies.length > 0 ? (

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import datas from "./Search.jsx";
+import { useParams, Link } from "react-router-dom";
 import axios from "axios";
 
 export default function MovieDetail() {
@@ -11,6 +12,8 @@ export default function MovieDetail() {
     async function fetchMovie() {
       try {
         const response = await axios.get(`https://www.omdbapi.com/?apikey=17dec6d0&i=${id}`);
+        console.log(response.data);
+        
         setMovie(response.data);
       } catch (error) {
         console.error("Error fetching movie details:", error);

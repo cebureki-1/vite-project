@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+
 import Login from "./login.jsx";
 import Home from "./Home.jsx";
 import Gallery from "./Gallery.jsx";
