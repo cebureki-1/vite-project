@@ -14,7 +14,7 @@ const reducer = (state, action) => {
         todos: [
           ...state.todos,
           {
-            id: state.todos.length || 0,
+            id: state.todos.length || 0 ,
             title: action.payload.names,
             price: action.payload.price
           }
